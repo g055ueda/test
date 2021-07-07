@@ -6,11 +6,10 @@
 int y;
  if (x < 0) {//Xが負の数の時の処理
    exit(1);
- }else{
-   y = sqrt(x);
+ }
+   y = sqrt(x*1.0);
    return y;
- }
- }
+  }
 
 int main(void)
 {
