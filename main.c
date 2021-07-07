@@ -7,14 +7,14 @@ int y;
  if (x < 0) {//Xが負の数の時の処理
    exit(1);
  }
-   y = sqrt(x*1.0);
+   y = sqrt(x);
    return y;
   }
 
 int main(void)
 {
   int i;
-  double *x = (double *)malloc(sizeof(double) * 100);
+  double *x = (double *)malloc(sizeof(double) * 101);//0~100の配列のため101個必要である。
 
   for( i = 0; i <= 100; i ++ ){//whileではiが定義されずに計算されるため、forを用いる。
     x[i] = myRoot((double)i);
