@@ -1,9 +1,4 @@
-NAME	= main.c
-CC	= gcc
-CFLAG	= -Wall
-LIB	= -lm
-all:$(NAME)
-make:$(NAME)
-	$(CC) $(CFLAG) -O -o $@ $(NAME) $(LIB)
+all: main.c
+	gcc -Wall -O -o main main.c -lm
 clean:
-	rm $@ *~
+	rm -f main *~  
